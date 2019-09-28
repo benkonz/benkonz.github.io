@@ -12,11 +12,17 @@ I am a data-engineer on the Forensiq-platform team at [Impact](https://impact.co
 
 Jeroo is a programming language learning tool designed for classroom use. I designed the compiler to handle multiple language styles, such as Python, Java, and Visual Basic. The compiler, written in OCaml, is also able to type-check and generate efficent bytecode. The bytecode is then interpreted, in TypeScript, as various actions on the Jeroo game board.
 
-The game can be played here: [jeroo.org/beta](https://www.jeroo.org/beta)
+The game can be played here: [jeroo.org/beta](https://www.jeroo.org/beta).
 
 ### Gameboy Emulator
 
-TODO
+My Gameboy Emulator project is a functional hardware emulator for the 1989 Nintendo Gameboy. It is capable of playing basic Gameboy ROM files such as Tetris and Dr. Mario. The emulator is written entirely in Rust and is capable of beging compiled to various OS's and web browsers through Web Assembly. 
+
+Current limitations include not supporting sound, ROM files larger than 32KB, and Gameboy Color support.
+
+The source code can be found here: [benkonz/gameboy_emulator](https://github.com/benkonz/gameboy_emulator).
+
+Still working on hosting the web version of the project somewhere.
 
 ### Bitset Iterator
 
