@@ -4,21 +4,33 @@ title: About
 permalink: /about/
 ---
 
-I am a data-engineer on the Forensiq-platform team at [Impact](https://impact.com). I've created software tooling to increase data reliability, written tests to verify the correctness of [AVRO IDL](https://avro.apache.org/docs/1.8.2/idl.html) files, and enhanced the data enrichment suite.
+I am a data-engineer on the
+[Forensiq](https://impact.com/ad-fraud-detection/)-platform team at [Impact](https://impact.com). 
+I've created software tooling to increase data reliability, written tests to
+verify the correctness of [AVRO IDL](https://avro.apache.org/docs/1.8.2/idl.html) files, 
+and enhanced the data enrichment suite.
 
 ## Projects
 
 ### Jeroo
 
-Jeroo is a programming language learning tool designed for classroom use. I designed the compiler to handle multiple language styles, such as Python, Java, and Visual Basic. The compiler, written in OCaml, is also able to type-check and generate efficent bytecode. The bytecode is then interpreted, in TypeScript, as various actions on the Jeroo game board.
+Jeroo is a programming language learning tool designed for classroom use. 
+I designed the compiler to handle multiple language styles, such as Python, 
+Java, and Visual Basic. The compiler, written in OCaml, is also able to 
+type-check and generate efficent bytecode. The bytecode is then interpreted, 
+in TypeScript, as various actions on the Jeroo game board.
 
 The game can be played here: [jeroo.org/beta](https://www.jeroo.org/beta).
 
 ### Gameboy Emulator
 
-My Gameboy Emulator project is a functional hardware emulator for the 1989 Nintendo Gameboy. It is capable of playing basic Gameboy ROM files such as Tetris and Dr. Mario. The emulator is written entirely in Rust and is capable of beging compiled to various OS's and web browsers through Web Assembly. 
+My Gameboy Emulator project is a functional hardware emulator for the 1989
+Nintendo Gameboy. It is capable of playing basic Gameboy ROM files such as
+Tetris and Dr. Mario. The emulator is written entirely in Rust and is 
+capable of beging compiled to various OS's and web browsers through Web Assembly. 
 
-Current limitations include not supporting sound, ROM files larger than 32KB, and Gameboy Color support.
+Current limitations include not supporting sound, ROM files larger than 32KB, 
+and Gameboy Color support.
 
 The source code can be found here: [benkonz/gameboy_emulator](https://github.com/benkonz/gameboy_emulator).
 
