@@ -32,5 +32,5 @@ TODO
 
 - Email: [benkonz@protonmail.com](mailto:benkonz@protonmail.com)
 - Github: [github.com/benkonz](https://github.com/benkonz)
-- Gitlab: [bkonzUNOmaha](https://gitlab.com/bkonzUNOmaha)
-- Linkedin: [ben-konz](https://www.linkedin.com/in/ben-konz-48630414b)
+- Gitlab: [gitlab.com/bkonzUNOmaha](https://gitlab.com/bkonzUNOmaha)
+- Linkedin: [linkedin.com/in/ben-konz-48630414b](https://www.linkedin.com/in/ben-konz-48630414b)
