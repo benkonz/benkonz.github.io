@@ -7,7 +7,7 @@ permalink: /about/
 I am a data-engineer on the Forensiq-platform team at [Impact](https://impact.com). I've created software tooling to increase data reliability, written tests to verify the correctness of [AVRO IDL](https://avro.apache.org/docs/1.8.2/idl.html) files, and enhanced the data enrichment suite.
 
 ## Projects
- 
+
 ### Jeroo
 
 Jeroo is a programming language learning tool designed for classroom use. I designed the compiler to handle multiple language styles, such as Python, Java, and Visual Basic. The compiler, written in OCaml, is also able to type-check and generate efficent bytecode. The bytecode is then interpreted, in TypeScript, as various actions on the Jeroo game board.
@@ -24,9 +24,12 @@ The source code can be found here: [benkonz/gameboy_emulator](https://github.com
 
 Still working on hosting the web version of the project somewhere.
 
-### Bitset Iterator
+### Bitset Container
 
-TODO
+My Bitset Container project is a C++ Header Only library that provides C++ STL
+iterator functionality for bits of arbitrary length.
+
+The source code can be found here: [benkonz/BitsetContainer](https://github.com/benkonz/BitsetContainer)
 
 ## Contact
 
