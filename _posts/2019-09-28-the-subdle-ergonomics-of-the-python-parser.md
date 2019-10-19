@@ -1,13 +1,13 @@
 ---
 layout: post
-title: The Subdle Ergonomics of the Python Parser
+title: The Subtle Ergonomics of the Python Parser
 catagories: Python, Programming Languages
 ---
 
-[Python](https://www.python.org/) has established itself as a popular programming langauge for both
-programming newcomers and veterians. This is due to how easy the language is to
+[Python](https://www.python.org/) has established itself as a popular programming language for both
+programming newcomers and veterans. This is due to how easy the language is to
 both read and write. While writing a Python parser for
-[Jeroo](https://jeroo.org/beta), I discovered many subdle things that the Parser and
+[Jeroo](https://jeroo.org/beta), I discovered many subtle things that the Parser and
 Lexer do that make the language very ergonomic to use. 
 
 # Dynamic Indentation Levels
@@ -22,12 +22,12 @@ print("always")
 ```
 
 The indentation level can be of any length, so long as that it is more
-whitespace than the previously seen indentation level. Additionally, tabs cout
+whitespace than the previously seen indentation level. Additionally, tabs count
 as 8 spaces, so it is possible to parse a file with both tabs and spaces.
 
 # Auto-Closing Dedentation Tokens
 
-[The Python lanauge spec](https://docs.python.org/3/reference/lexical_analysis.html#indentation)
+[The Python language spec](https://docs.python.org/3/reference/lexical_analysis.html#indentation)
 specifies that all indentation levels should be automatically be closed before 
 the lexer emits an EOF token. 
 
