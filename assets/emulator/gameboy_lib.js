@@ -636,6 +636,9 @@ Module.STDWEB_PRIVATE.acquire_tmp = function( dummy ) {
             "__cargo_web_snippet_78fddaff0f0da074fcf66227f0873dec2d6cbc4c": function($0) {
                 var o = Module.STDWEB_PRIVATE.acquire_js_reference( $0 );return (o instanceof WebGLTexture) | 0;
             },
+            "__cargo_web_snippet_7b6499e43c599951461785dd6b8ed00603ee6c36": function($0) {
+                var o = Module.STDWEB_PRIVATE.acquire_js_reference( $0 );return (o instanceof TouchEvent && o.type === "touchend") | 0;
+            },
             "__cargo_web_snippet_7c8dfab835dc8a552cd9d67f27d26624590e052c": function($0) {
                 var r = Module.STDWEB_PRIVATE.acquire_js_reference( $0 );return (r instanceof DOMException) && (r.name === "SyntaxError");
             },
@@ -725,6 +728,9 @@ Module.STDWEB_PRIVATE.acquire_tmp = function( dummy ) {
             },
             "__cargo_web_snippet_dcbfa3eb1cc89d9842b0ad8d9030a57a7cae7124": function($0) {
                 return (Module.STDWEB_PRIVATE.acquire_js_reference( $0 ) instanceof Uint8Array) | 0;
+            },
+            "__cargo_web_snippet_e31a68c30b0b55277add87eed100a9f9967153d6": function($0) {
+                var o = Module.STDWEB_PRIVATE.acquire_js_reference( $0 );return (o instanceof TouchEvent && o.type === "touchstart") | 0;
             },
             "__cargo_web_snippet_e9638d6405ab65f78daf4a5af9c9de14ecf1e2ec": function($0) {
                 $0 = Module.STDWEB_PRIVATE.to_js($0);Module.STDWEB_PRIVATE.unregister_raw_value(($0));
