@@ -34,7 +34,7 @@ and Gameboy Color support.
 
 The source code can be found here: [benkonz/gameboy_emulator](https://github.com/benkonz/gameboy_emulator).
 
-Still working on hosting the web version of the project somewhere.
+The web port can be is running here: [emulator](/assets/emulator)
 
 ### Bitset Container
 
