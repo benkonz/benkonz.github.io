@@ -648,6 +648,9 @@ Module.STDWEB_PRIVATE.acquire_tmp = function( dummy ) {
             "__cargo_web_snippet_80d6d56760c65e49b7be8b6b01c1ea861b046bf0": function($0) {
                 Module.STDWEB_PRIVATE.decrement_refcount( $0 );
             },
+            "__cargo_web_snippet_85f4990c623602d2492ec9bad1262a9d58f9d0eb": function($0) {
+                $0 = Module.STDWEB_PRIVATE.to_js($0);document.addEventListener("visibilitychange",function(){if(document.visibilityState=="visible"){var visibility_change_callback=($0);visibility_change_callback();}});
+            },
             "__cargo_web_snippet_893d0baabb30bb4113cc07e30f88edbb561f815e": function($0) {
                 var o = Module.STDWEB_PRIVATE.acquire_js_reference( $0 );return (o instanceof WebGLUniformLocation);
             },
