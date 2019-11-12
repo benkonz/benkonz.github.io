@@ -648,9 +648,6 @@ Module.STDWEB_PRIVATE.acquire_tmp = function( dummy ) {
             "__cargo_web_snippet_80d6d56760c65e49b7be8b6b01c1ea861b046bf0": function($0) {
                 Module.STDWEB_PRIVATE.decrement_refcount( $0 );
             },
-            "__cargo_web_snippet_85f4990c623602d2492ec9bad1262a9d58f9d0eb": function($0) {
-                $0 = Module.STDWEB_PRIVATE.to_js($0);document.addEventListener("visibilitychange",function(){if(document.visibilityState=="visible"){var visibility_change_callback=($0);visibility_change_callback();}});
-            },
             "__cargo_web_snippet_893d0baabb30bb4113cc07e30f88edbb561f815e": function($0) {
                 var o = Module.STDWEB_PRIVATE.acquire_js_reference( $0 );return (o instanceof WebGLUniformLocation);
             },
@@ -731,6 +728,9 @@ Module.STDWEB_PRIVATE.acquire_tmp = function( dummy ) {
             },
             "__cargo_web_snippet_f1d9d870366ef75a4ecf75a82ffe651d9c3a0fa1": function($0, $1) {
                 $1 = Module.STDWEB_PRIVATE.to_js($1);Module.STDWEB_PRIVATE.from_js($0, (function(){return($1).getContext("webgl");})());
+            },
+            "__cargo_web_snippet_f2d025b03da7f7c0e50668fc121c77a02cc53971": function($0) {
+                $0 = Module.STDWEB_PRIVATE.to_js($0);document.addEventListener("visibilitychange",function(){if(document.visibilityState=="hidden"){var visibility_change_callback=($0);visibility_change_callback();}});
             },
             "__cargo_web_snippet_fb1fca4716816707163ce8fd1ea7425f01c59fc7": function($0) {
                 var o = Module.STDWEB_PRIVATE.acquire_js_reference( $0 );return (o instanceof WebGLShader);
