@@ -726,6 +726,9 @@ Module.STDWEB_PRIVATE.acquire_tmp = function( dummy ) {
             "__cargo_web_snippet_f1d9d870366ef75a4ecf75a82ffe651d9c3a0fa1": function($0, $1) {
                 $1 = Module.STDWEB_PRIVATE.to_js($1);Module.STDWEB_PRIVATE.from_js($0, (function(){return($1).getContext("webgl");})());
             },
+            "__cargo_web_snippet_f91e3759ea8e40c15404c8b089c74fe76b61421e": function($0) {
+                Module.STDWEB_PRIVATE.from_js($0, (function(){return Date.now();})());
+            },
             "__cargo_web_snippet_fb1fca4716816707163ce8fd1ea7425f01c59fc7": function($0) {
                 var o = Module.STDWEB_PRIVATE.acquire_js_reference( $0 );return (o instanceof WebGLShader);
             },
