@@ -22,15 +22,15 @@ in TypeScript, as various actions on the Jeroo game board.
 
 The game can be played here: [jeroo.org/beta](https://www.jeroo.org/beta).
 
-### Gameboy Emulator
+### Gameboy (Color) Emulator
 
 My Gameboy Emulator project is a functional hardware emulator for the 1989
-Nintendo Gameboy. It is capable of playing basic Gameboy ROM files such as
-Tetris and Dr. Mario. The emulator is written entirely in Rust and is 
-capable of beging compiled to various OS's and web browsers through Web Assembly. 
+Nintendo Gameboy and Gameboy Color. It is capable of playing Gameboy ROM files such as
+Tetris and Pokemon Crystal. The emulator is written entirely in Rust and is 
+capable of beging compiled to various OS's and web browsers through Web Assembly.
 
-Current limitations include not supporting sound, ROM files larger than 32KB, 
-and Gameboy Color support.
+Features include: multiple hardware types, accurate emulation (passes Blargg cpu_instrs tests),
+Real Time Clock emulation, battery backup saving, and Gameboy Color emulation.
 
 The source code can be found here: [benkonz/gameboy_emulator](https://github.com/benkonz/gameboy_emulator).
 
@@ -47,5 +47,5 @@ The source code can be found here: [benkonz/BitsetContainer](https://github.com/
 
 - Email: [benkonz@protonmail.com](mailto:benkonz@protonmail.com)
 - Github: [github.com/benkonz](https://github.com/benkonz)
-- Gitlab: [gitlab.com/bkonzUNOmaha](https://gitlab.com/bkonzUNOmaha)
+- Gitlab: [gitlab.com/benkonz](https://gitlab.com/benkonz)
 - Linkedin: [linkedin.com/in/ben-konz-48630414b](https://www.linkedin.com/in/ben-konz-48630414b)
