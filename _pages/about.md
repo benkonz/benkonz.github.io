@@ -34,7 +34,7 @@ Real Time Clock emulation, battery backup saving, and Gameboy Color emulation.
 
 The source code can be found here: [benkonz/gameboy_emulator](https://github.com/benkonz/gameboy_emulator).
 
-The web port can be is running here: [emulator](/assets/emulator)
+The web port is running here: [emulator](/assets/emulator)
 
 ### Bitset Container
 
