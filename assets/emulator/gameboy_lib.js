@@ -615,9 +615,6 @@ Module.STDWEB_PRIVATE.acquire_tmp = function( dummy ) {
             "__cargo_web_snippet_4442d6d616c5edf167d3281e0d6766302ec6be0c": function($0, $1, $2, $3) {
                 $1 = Module.STDWEB_PRIVATE.to_js($1);$2 = Module.STDWEB_PRIVATE.to_js($2);$3 = Module.STDWEB_PRIVATE.to_js($3);Module.STDWEB_PRIVATE.from_js($0, (function(){return($1).getShaderParameter(($2),($3));})());
             },
-            "__cargo_web_snippet_450a8dd321a15fc252f42de360a150bf905dab9b": function($0, $1, $2) {
-                $1 = Module.STDWEB_PRIVATE.to_js($1);$2 = Module.STDWEB_PRIVATE.to_js($2);Module.STDWEB_PRIVATE.from_js($0, (function(){let h=($1);var samples=($2);var sampleRate=44100;var sampleCount=samples.length;var latency=0.032;var audioBuffer;if(h.emptyAudioBuffers.length===0){audioBuffer=h.audio.createBuffer(2,sampleCount,sampleRate);}else{audioBuffer=h.emptyAudioBuffers.pop();}audioBuffer.getChannelData(0).set(samples);var node=h.audio.createBufferSource();node.connect(h.audio.destination);node.buffer=audioBuffer;node.onended=function(){h.emptyAudioBuffers.push(audioBuffer);};var buffered=h.playTimestamp-(h.audio.currentTime+latency);var playTimestamp=Math.max(h.audio.currentTime+latency,h.playTimestamp);node.start(playTimestamp);h.playTimestamp=playTimestamp+sampleCount/2/sampleRate;return buffered;})());
-            },
             "__cargo_web_snippet_4f39af45c01900ac809ed63bbe9469ad87dff251": function($0, $1, $2, $3, $4, $5, $6, $7, $8, $9) {
                 $0 = Module.STDWEB_PRIVATE.to_js($0);$1 = Module.STDWEB_PRIVATE.to_js($1);$2 = Module.STDWEB_PRIVATE.to_js($2);$3 = Module.STDWEB_PRIVATE.to_js($3);$4 = Module.STDWEB_PRIVATE.to_js($4);$5 = Module.STDWEB_PRIVATE.to_js($5);$6 = Module.STDWEB_PRIVATE.to_js($6);$7 = Module.STDWEB_PRIVATE.to_js($7);$8 = Module.STDWEB_PRIVATE.to_js($8);$9 = Module.STDWEB_PRIVATE.to_js($9);($0).texImage2D(($1),($2),($3),($4),($5),($6),($7),($8),($9));
             },
@@ -704,6 +701,9 @@ Module.STDWEB_PRIVATE.acquire_tmp = function( dummy ) {
             },
             "__cargo_web_snippet_ac7d2ed6b6f9c8022b4938c48fabf184cdb62103": function($0, $1) {
                 $0 = Module.STDWEB_PRIVATE.to_js($0);$1 = Module.STDWEB_PRIVATE.to_js($1);($0).compileShader(($1));
+            },
+            "__cargo_web_snippet_c244a3504524e37ee12af620f64757996f2ef1d0": function($0, $1, $2) {
+                $1 = Module.STDWEB_PRIVATE.to_js($1);$2 = Module.STDWEB_PRIVATE.to_js($2);Module.STDWEB_PRIVATE.from_js($0, (function(){let h=($1);var samples=($2);var sampleRate=44100;var sampleCount=4096;var latency=0.032;var audioBuffer;if(h.emptyAudioBuffers.length===0){audioBuffer=h.audio.createBuffer(2,sampleCount,sampleRate*2);}else{audioBuffer=h.emptyAudioBuffers.pop();}audioBuffer.getChannelData(0).set(samples);var node=h.audio.createBufferSource();node.connect(h.audio.destination);node.buffer=audioBuffer;node.onended=function(){h.emptyAudioBuffers.push(audioBuffer);};var buffered=h.playTimestamp-(h.audio.currentTime+latency);var playTimestamp=Math.max(h.audio.currentTime+latency,h.playTimestamp);node.start(playTimestamp);h.playTimestamp=playTimestamp+sampleCount/2/sampleRate;return buffered;})());
             },
             "__cargo_web_snippet_c3f167cac56fb49380b4761631eaa17dba921f1d": function($0, $1, $2) {
                 $1 = Module.STDWEB_PRIVATE.to_js($1);$2 = Module.STDWEB_PRIVATE.to_js($2);Module.STDWEB_PRIVATE.from_js($0, (function(){return($1).createShader(($2));})());
