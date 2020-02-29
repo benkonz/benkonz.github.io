@@ -603,6 +603,9 @@ Module.STDWEB_PRIVATE.acquire_tmp = function( dummy ) {
             "__cargo_web_snippet_37f123361e40b110cef478a4c4ab6d5b8c7e60cf": function($0, $1) {
                 $1 = Module.STDWEB_PRIVATE.to_js($1);Module.STDWEB_PRIVATE.from_js($0, (function(){return($1).buffer;})());
             },
+            "__cargo_web_snippet_38dd9ad6eaa8bc2a2fcfcf2c3494c77c67169bd2": function($0, $1) {
+                $0 = Module.STDWEB_PRIVATE.to_js($0);$1 = Module.STDWEB_PRIVATE.to_js($1);console.log(($0),($1));
+            },
             "__cargo_web_snippet_3c63e773071319eff09af93ceb0203933dc4f233": function($0) {
                 var o = Module.STDWEB_PRIVATE.acquire_js_reference( $0 );return (o instanceof KeyboardEvent && o.type === "keyup");
             },
@@ -753,8 +756,8 @@ Module.STDWEB_PRIVATE.acquire_tmp = function( dummy ) {
             Object.defineProperty( Module, 'web_free', { value: Module.instance.exports.__web_free } );
             Object.defineProperty( Module, 'web_table', { value: Module.instance.exports.__indirect_function_table } );
 
-            Module.exports.start = function start(rom) {
-    Module.instance.exports.start(Module.STDWEB_PRIVATE.prepare_any_arg(rom));
+            Module.exports.start = function start(rom, dom_ids) {
+    Module.instance.exports.start(Module.STDWEB_PRIVATE.prepare_any_arg(rom), Module.STDWEB_PRIVATE.prepare_any_arg(dom_ids));
 }
 ;
             __web_on_grow();
