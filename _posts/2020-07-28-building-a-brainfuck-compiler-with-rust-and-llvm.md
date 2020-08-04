@@ -10,7 +10,7 @@ This tutorial is going to go over how to create a simple compiler using LLVM for
 
 # Brainf*ck Introduction
 
-[Brainf-ck](https://en.wikipedia.org/wiki/Brainfuck) is a very simple, turing complete, programming language that is made up of 8 commands. Eash command is a single character, so parsing out an entire brainf*ck file is easy. Just read every character and match the character with a command. If the character isn't a command, just skip it and move to the next character.
+[Brainf*ck](https://en.wikipedia.org/wiki/Brainfuck) is a very simple, turing complete, programming language that is made up of 8 commands. Eash command is a single character, so parsing out an entire brainf*ck file is easy. Just read every character and match the character with a command. If the character isn't a command, just skip it and move to the next character.
 
 ## Commands
 
