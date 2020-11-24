@@ -10,7 +10,7 @@ This tutorial is going to go over how to create a simple compiler using LLVM for
 
 # Brainf*ck Introduction
 
-[Brainf*ck](https://en.wikipedia.org/wiki/Brainfuck) is a very simple, turing complete, programming language that is made up of 8 commands. Eash command is a single character, so parsing out an entire brainf*ck file is easy. Just read every character and match the character with a command. If the character isn't a command, just skip it and move to the next character.
+[Brainf-ck](https://en.wikipedia.org/wiki/Brainfuck) is a very simple, turing complete, programming language that is made up of 8 commands. Each command is a single character, so parsing out an entire brainf*ck file is easy. Just read every character and match the character with a command. If the character isn't a command, just skip it and move to the next character.
 
 ## Commands
 
@@ -186,9 +186,9 @@ echo $?
 
 The `echo $?` should print out the status code of the last program. You can modify the `let i32_zero = i32_type.const_int(0, false);` line to return any integer. 
 
-# System Calls
+# Standard Library Functions
 
-Before we start compiling our source program, we need to initialize the memory that our brainf*ck programs will use. This means calling the [calloc](https://en.cppreference.com/w/c/memory/calloc) system call.
+Before we start compiling our source program, we need to initialize the memory that our brainf*ck programs will use. This means calling the [calloc](https://en.cppreference.com/w/c/memory/calloc) libc call.
 
 After we've initialized our `builder`, we're going to add this code
 
@@ -260,7 +260,7 @@ free(0x55a9ec9482a0)    = <void>
 +++ exited (status 0) +++
 ```
 
-`ltrace` traces all of the system calls of an executable, so we should see a call to `calloc` and a call to `free`.
+`ltrace` traces all of the library calls of an executable, so we should see a call to `calloc` and a call to `free`.
 
 We'll need to setup some boilerplate code to read in our input file and iterate through all of the characters. After `builder.build_store(ptr, data_ptr_basic_val);`, add
 
