@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Gameboy Emulator</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div class="input-container">
+		<input type="file" id="file_selector" />
+	</div>
+	<div class="emulator-container">
+		<canvas id="canvas"></canvas>
+		<div class="controller-container">
+			<div class="buttons-container">
+				<table>
+					<tr>
+						<td><button id="up-left-btn">&nwarr;</button></td>
+						<td><button id="up-btn">&uarr;</button></td>
+						<td><button id="up-right-btn">&nearr;</button></td>
+					</tr>
+					<tr>
+						<td><button id="left-btn">&larr;</button></td>
+						<td></td>
+						<td><button id="right-btn">&rarr;</button></td>
+					</tr>
+					<tr>
+						<td><button id="down-left-btn">&swarr;</button></td>
+						<td><button id="down-btn">&darr;</button></td>
+						<td><button id="down-right-btn">&searr;</button></td>
+					</tr>
+				</table>
+			</div>
+			<div class="buttons-container">
+				<button id="start-btn" class="start-btn">START</button>
+				<button id="select-btn">SELECT</button>
+			</div>
+			<div class="buttons-container">
+				<button id="a-btn" class="a-btn">A</button>
+				<button id="b-btn">B</button>
+			</div>
+		</div>
+	</div>
+	<script src="gameboy_lib.js" defer></script>
+	<script>
+		window.onload = () => {
+			Rust.gameboy_lib.then(function (emulator) {
+				document.getElementById("file_selector")
+					.addEventListener("change", function () {
+						const reader = new FileReader();
+						reader.onload = function () {
+							const arrayBuffer = this.result;
+							const bytes = new Uint8Array(arrayBuffer);
+							const rom = Array.prototype.slice.call(bytes);
+							let dom_info = {
+								up_button_id: "up-btn", down_button_id: "down-btn",
+								left_button_id: "left-btn", right_button_id: "right-btn",
+								up_left_button_id: "up-left-btn", up_right_button_id: "up-right-btn",
+								down_left_button_id: "down-left-btn", down_right_button_id: "down-right-btn",
+								a_button_id: "a-btn", b_button_id: "b-btn",
+								start_button_id: "start-btn", select_button_id: "select-btn",
+								canvas_id: "canvas",
+							}
+							emulator.start(rom, JSON.stringify(dom_info));
+						};
+
+						reader.readAsArrayBuffer(this.files[0]);
+					});
+			});
+		};
+	</script>
+	<style>
+		body {
+			padding: 2rem;
+			margin: auto;
+			font-family: 'Roboto Mono', monospace;
+		}
+
+		canvas {
+			width: 640px;
+			height: 576px;
+			display: block;
+			margin: auto;
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+
+		button {
+			font-size: 20px;
+			padding: 10px;
+			touch-action: manipulation;
+			-webkit-touch-callout: none;
+			-webkit-user-select: none;
+			-khtml-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+		}
+
+		table {
+			margin-right: auto;
+			margin-left: auto;
+		}
+
+		.input-container {
+			text-align: center;
+		}
+
+		.emulator-container {
+			margin-left: auto;
+			margin-right: auto;
+			width: 720px;
+			height: 775px;
+			border: 2px solid black;
+			border-radius: 5px;
+			touch-action: manipulation;
+		}
+
+		.controller-container {
+			width: 720px;
+			height: 146px;
+			border-top: 4px solid black;
+		}
+
+		.buttons-container {
+			width: 33%;
+			height: 100%;
+			float: left;
+			text-align: center;
+			margin-top: 5px;
+		}
+
+		.start-btn {
+			margin-right: 5px;
+			margin-top: 100px;
+		}
+
+		.a-btn {
+			margin-right: 5px;
+		}
+	</style>
+</body>
+
+</html>
