@@ -192,15 +192,16 @@ To inspect the Ratatool output, navigate to your BigQuery dataset in the GCP con
 
  The `delta.left` and `delta.right` correspond to the value for the `delta.field` for 2010 (left) and 2011 (right).
 
- The `delta.delta.deltaValue` column shows the difference in value from `delta.left` and `delta.right`, so if the `delta.field` is `rank`, the id is `200079_Kim_Clijsters_02`, `delta.left` and `delta.right` are `17` and `1`, and `delta.delta.deltaValue` is `-16`, then that means that Kim Clijsters rank rose from `17` in `2010` to `1` in `2011`. 
+ The `delta.delta.deltaValue` column shows the difference in value from `delta.left` and `delta.right`, so if the `delta.field` is `rank`, the id is `200079_Kim_Clijsters_02`, `delta.left` and `delta.right` are `17` and `1`, and `delta.delta.deltaValue` is `-16`, then that means that Kim Clijsters rank rose from `17` in `2010` to `1` in `2011` in the month of February. 
 
  At this point, we can do further analysis in BigQuery by sorting players by the greatest increase in ranking from 2010 and 2011 via:
 
 ```sql
 SELECT * FROM `[PROJECT].ratatool_wta_output.tennis-wta-bigdiffy_keys` 
 WHERE diffType = 'DIFFERENT'
+AND delta.field = 'rank'
 ORDER BY delta.delta.deltaValue asc
-LIMIT 1000
+ LIMIT 1000
 ```
 
 ## tennis-wta-bigdiffy_global
