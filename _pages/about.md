@@ -4,11 +4,7 @@ title: About
 permalink: /about/
 ---
 
-I am a data-engineer on the
-[Forensiq](https://impact.com/ad-fraud-detection/)-platform team at [Impact](https://impact.com). 
-I've created software tooling to increase data reliability, written tests to
-verify the correctness of [AVRO IDL](https://avro.apache.org/docs/1.8.2/idl.html) files, 
-and enhanced the data enrichment suite.
+I am a data-engineer at Spotify! I type things on a computer and hope nothign breaks!
 
 ## Projects
 
