@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-I am a data-engineer at Spotify! I type things on a computer and hope nothign breaks!
+I am a data/backend engineer at Spotify! I type things on a computer and hope nothing breaks!
 
 ## Projects
 
