@@ -1,0 +1,19 @@
+{
+  "name": "gameboy_emulator",
+  "type": "module",
+  "collaborators": [
+    "Benjamin Konz <benkonz@protonmail.com>",
+    "Nicholas Alexeev <scifi6546@protonmail.com>"
+  ],
+  "version": "0.2.8",
+  "files": [
+    "gameboy_lib_bg.wasm",
+    "gameboy_lib.js",
+    "gameboy_lib.d.ts"
+  ],
+  "main": "gameboy_lib.js",
+  "types": "gameboy_lib.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}
